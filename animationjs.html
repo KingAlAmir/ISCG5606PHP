@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation Text</title>
+	  <style>
+#container { /*w3 schools basic javascript - can't use it on my website or else it will move the whole thing \/*/
+  width: 375px;
+  height: 375px;
+  position: relative;
+  background: black;
+}
+#animate {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+  </head>
+  <body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+
+
+  </body>
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+</html>

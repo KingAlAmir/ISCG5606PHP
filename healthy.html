@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Petfood</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+</head>
+
+<body>
+	<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="wetfood.html">Wetfood</a></li>
+  <li><a href="dryfood.html">Dryfood</a></li>
+  <li><a href="treats.html">Treats</a></li>
+  <li><a href="healthy.html">Healthy</a></li>
+  <li><a href="animation.html">Animation CSS</a></li>
+  <li><a href="animationjs.html">Animation JS</a></li>
+  <li style="float:right"><a href="cart.html">Cart</a></li>
+</ul>
+
+<div id="site">
+	<header id="masthead">
+		<h1>Pet Food - Healthy food<span class="tagline">Unitec</span></h1>
+	</header>
+	<div id="content">
+		<div id="products">
+			<ul>
+				<li>
+					<div class="product-image">
+						<img src="images/hillsdiet.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Hillsdiet" data-price="5">
+						<h3 class="product-name">Hills dog diet food (dry)</h3>
+						<p class="product-price">&#36; 5</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-22">Quantity</label>
+								<input type="text" name="qty-22" id="qty-22" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+				
+				<li>
+					<div class="product-image">
+						<img src="images/henal.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Renal" data-price="8">
+						<h3 class="product-name">Renal cat diet food (wet)</h3>
+						<p class="product-price">&#36; 8</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-23">Quantity</label>
+								<input type="text" name="qty-23" id="qty-23" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+				
+				<li>
+					<div class="product-image">
+						<img src="images/hillskidney.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Frolic" data-price="11">
+						<h3 class="product-name">Hills diet cat food (dry)</h3>
+						<p class="product-price">&#36; 11</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-24">Quantity</label>
+								<input type="text" name="qty-24" id="qty-24" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+
+				
+			</ul>
+		</div>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		Copyright &copy; Amir
+	</footer>
+
+</body>
+</html>	

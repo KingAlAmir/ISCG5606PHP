@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Petfood</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" /> <!-- CSS style sheet -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script> <!-- JS script sheet -->
+
+</head>
+
+<body>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li> <!- navbar -->
+  <li><a href="wetfood.html">Wetfood</a></li>
+  <li><a href="dryfood.html">Dryfood</a></li>
+  <li><a href="treats.html">Treats</a></li>
+  <li><a href="healthy.html">Healthy</a></li>
+  <li><a href="animation.html">Animation CSS</a></li>
+  <li><a href="animationjs.html">Animation JS</a></li>
+  <li style="float:right"><a href="cart.html">Cart</a></li>
+</ul>
+
+<div id="site">
+	<header id="masthead">
+		<h1>Pet Food<span class="tagline">Unitec</span></h1>
+	</header>
+	<div id="content">
+		<div id="products">
+			<ul>
+				<li>
+					<div class="product-image">
+						<img src="images/freija.jpg" alt="" /> <!-- The logo of the food-->
+					</div>
+					<div class="product-description" data-name="Freija" data-price="5"> <!-- The data of the food -->
+						<h3 class="product-name">Freija cat food (dry)</h3> <!-- The nam,e of the food -->
+						<p class="product-price">&#36; 5</p> <!-- The price but changing this wont affect beacuse it's not the data -->
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-1">Quantity</label>
+								<input type="text" name="qty-1" id="qty-1" class="qty" value="1" /> <!--Hooked with the JS -->
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+				
+				<li>
+					<div class="product-image">
+						<img src="images/kitekat.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Kitekat" data-price="8">
+						<h3 class="product-name">Kitekat cat food (wet)</h3>
+						<p class="product-price">&#36; 8</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-2">Quantity</label>
+								<input type="text" name="qty-2" id="qty-2" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+				
+				<li>
+					<div class="product-image">
+						<img src="images/frolic.jpg" alt="" />
+					</div>
+					<div class="product-description" data-name="Frolic" data-price="11">
+						<h3 class="product-name">Frolic dog food (semi wet)</h3>
+						<p class="product-price">&#36; 11</p>
+						<form class="add-to-cart" action="cart.html" method="post">
+							<div>
+								<label for="qty-3">Quantity</label>
+								<input type="text" name="qty-3" id="qty-3" class="qty" value="1" />
+							</div>
+							<p><input type="submit" value="Add to cart" class="btn" /></p>
+						</form>
+					</div>
+				</li>
+
+				
+			</ul>
+		</div>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		Copyright &copy; Amir
+	</footer>
+
+</body>
+</html>	
