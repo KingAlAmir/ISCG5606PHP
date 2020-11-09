@@ -577,18 +577,18 @@
 		
 		_calculateShipping: function( qty ) {
 			var shipping = 0;
-			if( qty >= 3 ) {
+			if( qty >= 10 ) {
 				shipping = 10;
 			}
-			if( qty >= 6 && qty <= 12 ) {
-				shipping = 20;	
+			if( qty >= 20 && qty <= 30 ) {
+				shipping = 20;
 			}
-			
-			if( qty >= 12 && qty <= 24 ) {
-				shipping = 30;	
+
+			if( qty >= 40 && qty <= 50 ) {
+				shipping = 30;
 			}
-			
-			if( qty >= 24 ) {
+
+			if( qty >= 60 ) {
 				shipping = 0;
 			}
 			
