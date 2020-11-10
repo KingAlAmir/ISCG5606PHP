@@ -2,11 +2,13 @@
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
+
     //1. create a database connection
     $server = "klbcedmmqp7w17ik.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
     $dbusername = "t8jnow42fmp1smpt";
     $dbpassword = "fdavedw769oxw5pd";
     $dbname = "k2nfay1osz1i59kc";
+
     $conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
 
     //2. create query
