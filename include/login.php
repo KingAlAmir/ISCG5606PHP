@@ -21,12 +21,12 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
     if ($result->num_rows == 1) {
         echo "you have login";
         while ($row = $result->fetch_assoc()) {
-            echo $row["firstname"];
+            echo $row["username"];
             //start a session
             @session_start();
             //set a session variable
             $_SESSION["userID"] = $row["id"];
-            $_SESSION["firstname"] = $row["firstname"];
+            $_SESSION["username"] = $row["username"];
         }
     } else {
         // echo "wrong username or password";
