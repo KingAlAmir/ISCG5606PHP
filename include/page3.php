@@ -30,7 +30,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         }
     } else {
         // echo "wrong username or password";
-        
+
     }
 }
 ?>
