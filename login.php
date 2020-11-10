@@ -32,9 +32,9 @@ if ($result->num_rows == 1) {
     while ($row = $result->fetch_assoc()) {
         echo $row["firstname"];
         //start a sesttion
-        @session();
+        @session_start();
         //set
-        $s
+        $_SESSION["Firstname"]= $row["firstname"];
     }
 } else {
     echo "wrong username or password";
