@@ -6,7 +6,7 @@ $dbname = "ax3lru44vm27m7md";
 
 $conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
 
-$sql = "select * from product";
+$sql = "select * from Product";
 
 // show my result
 while ($row = $result->fetch_assoc()) {
