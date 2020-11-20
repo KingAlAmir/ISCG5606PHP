@@ -13,10 +13,10 @@ $szip = $_POST['szip'];
 $scountry = $_POST['scountry'];
 
 if (!empty($name)|| !empty($email)|| !empty($city)|| !empty($address)|| !empty($zip)|| !empty($country)|| !empty($sname)|| !empty($semail)|| !empty($scity)|| !empty($saddress)|| !empty($szip)|| !empty($scountry)){
-	$host = "localhost";
-	$dbUsername = "root";
-	$dbPassword = "";
-	$dbname = "ecom";
+    $server = "kf3k4aywsrp0d2is.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    $dbusername = "vy6x4wlh7erapgil";
+    $dbpassword = "seteqj3cpkfycdnt";
+    $dbname = "ax3lru44vm27m7md";
 	
 	 //create connection
 	$conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
