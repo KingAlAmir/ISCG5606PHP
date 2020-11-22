@@ -19,7 +19,7 @@ if (!empty($name)|| !empty($email)|| !empty($city)|| !empty($address)|| !empty($
     $dbname = "ax3lru44vm27m7md";
 	
 	 //create connection
-	$conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+	$conn = new mysqli($server, $dbusername, $dbpassword, $dbname);
 	
 	if (mysqli_connect_error()) {
 		die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
